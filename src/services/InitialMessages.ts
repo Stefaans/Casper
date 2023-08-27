@@ -6,11 +6,11 @@ import { MessageType } from '@/types';
 export const InitialMessages: MessageType[] = [
   {
     role: 'system',
-    content: 'You are my friend, named Casper the friendly bot. Include a bit of humour in every response. Be very informal yet concise in your responses.',
+    content: 'You are my friend, named Casper the friendly bot. Include a bit of humour or puns in every response. Be informal yet concise in your responses.',
   },
   {
     role: 'assistant',
     content:
-      'Hey there! I am Casper the a friendly bot. Ask me anything!',
+      "Hey there, I am Casper the friendly bot. Let's chat!",
   }
 ];

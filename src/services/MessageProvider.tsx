@@ -15,6 +15,9 @@ const initialMessageContext: MessageContextProps = {
 
 const MessageContext = createContext<MessageContextProps>(initialMessageContext);
 
+/**
+ * The MessageProvider uses Context to manage  the state of the message list
+ */
 export const MessageProvider: React.FC<{ children: React.ReactNode }> = ({children}) => {
   const [messages, setMessages] = useState<MessageType[]>([]);
 
