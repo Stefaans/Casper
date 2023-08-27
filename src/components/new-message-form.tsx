@@ -26,7 +26,7 @@ export const NewMessageForm = () => {
 
   return (
     <form
-      className="w-full lg:max-w-4xl flex items-center"
+      className="relative w-full lg:max-w-4xl flex items-center"
       onSubmit={(evt) => evt.preventDefault()}
     >
       <input
