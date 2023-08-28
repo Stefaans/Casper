@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline';
 import { useMessages } from '@/services/MessageProvider';
 
@@ -10,13 +10,6 @@ export const NewMessageForm = () => {
   const {addMessage} = useMessages();
   const [newMessage, setNewMessage] = useState<string>('');
   const ref = useRef<null | HTMLInputElement>(null);
-
-  // Focus the input when the component is mounted
-  useEffect(() => {
-    if (ref.current) {
-      ref.current.focus();
-    }
-  }, []);
 
   // Add the new user message to the list; setNewMessage() will take care of the bot response
   const submitNewMessage = () => {
