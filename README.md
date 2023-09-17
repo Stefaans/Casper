@@ -1,6 +1,6 @@
 # Casper the Friendly Bot
 
-This is s simple GPT-4 chat assistant made with Next.js.
+This is s simple GPT-3.5 chat assistant made with Next.js.
 
 ## Instructions
 
