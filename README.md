@@ -1,6 +1,6 @@
 # Casper the Friendly Bot
 
-This is s simple AI chat assistant made with Next.js.
+This is a simple OpenAI chat assistant made with Next.js.
 
 ## Instructions
 
