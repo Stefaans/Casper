@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { MessageType } from '@/types';
-import { InitialMessages } from '@/services/InitialMessages';
+import { Config } from '@/config';
 
 interface MessageContextProps {
   messages: MessageType[];
@@ -10,6 +10,7 @@ interface MessageContextProps {
 const initialMessageContext: MessageContextProps = {
   messages: [],
   addMessage: () => {
+
   },
 };
 
@@ -22,7 +23,7 @@ export const MessageProvider: React.FC<{ children: React.ReactNode }> = ({childr
   const [messages, setMessages] = useState<MessageType[]>([]);
 
   useEffect(() => {
-    setMessages(InitialMessages);
+    setMessages(Config.persona);
   }, []);
 
   const addMessage = ({role, content}: MessageType) => {

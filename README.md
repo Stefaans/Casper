@@ -1,6 +1,6 @@
 # Casper the Friendly Bot
 
-This is s simple GPT-3.5 chat assistant made with Next.js.
+This is s simple AI chat assistant made with Next.js.
 
 ## Instructions
 
@@ -8,5 +8,18 @@ This is s simple GPT-3.5 chat assistant made with Next.js.
 - And also:
   - Create an .env.local file (or environment variable on the server) with the following content:\
   `OPENAI_API_KEY=sk-XXXX`
-  - Edit services/InitialMessages.ts file with your initial System or Assistant messages.
+  - Set the following in `config.ts`:
+    - The OpenAI model: GPT-3 or GPT-4  
+    - The persona, which sets the initial System or Assistant messages
 - Developing and debugging: `npm run dev`
+
+## OpenAI models
+Two models are provided in the config; add your own if you have access to them:
+- gpt-3.5-turbo
+- gpt-4
+
+## Personas
+Three personas are defined in `personas.ts`, providing the initial system and assistant messages:
+- Casper: The default persona depicting a friendly chatbot.
+- Engineer: A structural engineer and fullstack web developer.
+- Kent: The custom ChatGPT prompt used by a great JavaScript engineer. 
